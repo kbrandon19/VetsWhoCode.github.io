@@ -1,0 +1,196 @@
+@import url(/css/style_reset.css);
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+.hero-container {
+  width: 100%;
+  height: 42rem;
+  padding: 0;
+  background-image: url(/assets/paul-weaver-nWidMEQsnAQ-unsplash.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  margin-top: -33rem;
+  z-index: -1;
+}
+
+.hero-container .hero-text {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: 17rem 0 0 0;
+  text-align: center;
+}
+
+.hero-container .hero-text h1 {
+  font-size: 8rem;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 120px;
+}
+
+.hero-container .hero-text h1#top {
+  margin-left: 1250px;
+  opacity: 0;
+}
+
+.hero-container .hero-text h1#bottom {
+  margin-left: -2000px;
+  opacity: 0;
+}
+
+.hero-container .hero-text .attributes {
+  width: 500px;
+  height: auto;
+  text-align: center;
+  margin: -10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  opacity: 0;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  color: #c0c0c0;
+}
+
+.hero-container .hero-text .attributes p {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Helvetica', serif;
+}
+
+.content-container {
+  position: relative;
+  padding: 0px;
+  height: 100rem;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.content-container .fade-banner {
+  height: 500px;
+  width: 100%;
+  margin-top: 33rem;
+  position: relative;
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.25)), color-stop(50%, rgba(255, 255, 255, 0.5)), color-stop(75%, white), to(white));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 25%, rgba(255, 255, 255, 0.5) 50%, white 75%, white 100%);
+}
+
+.content-container .bio {
+  width: 100%;
+  height: auto;
+  margin: -3rem 0 0 0;
+  padding-bottom: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffffff;
+}
+
+.content-container .bio .bio-text {
+  width: 40%;
+  height: auto;
+  padding: 10px 25px;
+}
+
+.content-container .bio .bio-text h2 {
+  font-size: 3rem;
+  margin-left: -25px;
+}
+
+.content-container .bio .bio-text p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: var(#2A2112);
+  margin-top: 15px;
+}
+
+.content-container .bio .bio-prof-img {
+  width: 40%;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+.content-container .bio .bio-prof-img .prof-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 60%;
+  background-image: url(./assets/prof.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -120px;
+}
+
+.content-container .social-media {
+  background-color: #ffffff;
+  padding: 20px 0 3rem 0;
+}
+
+.content-container .social-media .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  height: 100%;
+  padding: 25px;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.content-container .social-media .icons img {
+  width: 1.7rem;
+  cursor: pointer;
+  -webkit-transition: -webkit-filter .3s ease;
+  transition: -webkit-filter .3s ease;
+  transition: filter .3s ease;
+  transition: filter .3s ease, -webkit-filter .3s ease;
+}
+
+.content-container .social-media .icons #github:hover {
+  -webkit-filter: invert(23%) sepia(35%) saturate(3048%) hue-rotate(253deg) brightness(86%) contrast(93%);
+          filter: invert(23%) sepia(35%) saturate(3048%) hue-rotate(253deg) brightness(86%) contrast(93%);
+}
+
+.content-container .social-media .icons #whatsapp:hover {
+  -webkit-filter: invert(57%) sepia(77%) saturate(435%) hue-rotate(90deg) brightness(99%) contrast(96%);
+          filter: invert(57%) sepia(77%) saturate(435%) hue-rotate(90deg) brightness(99%) contrast(96%);
+}
+
+.content-container .social-media .icons #gmail:hover {
+  -webkit-filter: invert(37%) sepia(87%) saturate(2053%) hue-rotate(338deg) brightness(91%) contrast(102%);
+          filter: invert(37%) sepia(87%) saturate(2053%) hue-rotate(338deg) brightness(91%) contrast(102%);
+}
+
+.content-container .social-media .icons #linkedin:hover {
+  -webkit-filter: invert(26%) sepia(47%) saturate(3261%) hue-rotate(196deg) brightness(96%) contrast(92%);
+          filter: invert(26%) sepia(47%) saturate(3261%) hue-rotate(196deg) brightness(96%) contrast(92%);
+}
+
+.content-container .social-media .icons #instagram:hover {
+  -webkit-filter: invert(37%) sepia(83%) saturate(4718%) hue-rotate(331deg) brightness(100%) contrast(79%);
+          filter: invert(37%) sepia(83%) saturate(4718%) hue-rotate(331deg) brightness(100%) contrast(79%);
+}
+/*# sourceMappingURL=style.css.map */
