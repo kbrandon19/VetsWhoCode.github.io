@@ -25,4 +25,4 @@ Once that it completed, my goal is to rebuilt it using React.
 </div>
 
 
-[Live Site](https://kbrandon19.github.io/vetswhocode_prework/)
+[Live Site](https://kbrandon19.github.io/)
