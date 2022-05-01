@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/fdaa837f4d.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/web-project.css" />
+
+  <link rel="shortcut icon" href="/assets/logo_fox.png" type="image/png" />
+
+  <title>Cool Web Projects</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./assets/logo_name.svg" alt="Website logo" />
+        </a>
+      </div>
+      <div class="ham" id="ham">
+        <img src="./assets/ham.svg" alt="Mobile menu icon" />
+      </div>
+
+      <div class="desktop-nav" id="desktop-nav">
+        <ul id="desktop-nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="web-project.html">Web Development</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="mobile-nav" id="mobile-nav">
+      <ul id="mobile-nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="web-project.html">Web Development</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="exit" id="exit">
+        <img src="./assets/exit.svg" alt="Mobile menu close icon" />
+      </div>
+    </div>
+
+
+  </header>
+
+  <main>
+    <div class="overlay hide"></div>
+
+    <div class="spacer-lg"></div>
+
+    <section class="web-project">
+      <div class="web-project__title">
+        <div class="hori-rule"></div>
+        <h1>Social Media Dashboard</h1>
+        <a href="#" id="next-project"><span id="text">next project</span> > </a>
+      </div>
+
+      <div class="web-project__grid">
+        <div class="web-project__grid__main-image"></div>
+        <div class="web-project__grid__content-info">
+          <p>
+            The Social Media Dashboard was a cool project to tackle. Being able to learn about dark mode and how to incorporate a second color scheme was really nice. Not only was I able to learn the technically aspects of the toggle button but about color theory and how important choosing the right colors are. 
+          </p>
+          <p>
+            Being able to incorporate a theme toggle is an important and real work skill, given that this type of feature has become adapted to a lot of other websites and mobile applications.
+          </p>
+        </div>
+        <div class="web-project__grid__about">
+          <div id="goal">
+            <h2>The Goal</h2>
+            <p>
+              The goal of this project was to recreate a static dashboard that display statistics from various social media accounts. There are three items that were the focus of this project.
+            </p>
+            <ul>
+              <li>View the optimal layout for the site depending on their device's screen size</li>
+              <li>See hover states for all interactive elements on the page</li>
+              <li>Toggle color theme to their preference</li>
+            </ul>
+          </div>
+          <div id="built">
+            <h2>Built With</h2>
+            <ul>
+              <li>SCSS</li>
+              <li>JavaScript</li>
+              <li>CSS custom properties</li>
+              <li>Mobile first workflow</li>
+              <li>HTML</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/kbrandon19/Social-Media-Dashboard" id="code">View Code</a>
+            <a href="https://kbrandon19.github.io/Social-Media-Dashboard/" id="site">Live Site</a>
+          </div>
+        </div>
+        <div class="web-project__grid__grid-img">
+          <div class="inner-grid">
+            <div id="img1"></div>
+            <div id="img2"></div>
+            <div id="img3"></div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+
+  </main>
+  <div class="spacer-sm"></div>
+  <footer class="footer">
+
+    <div class="footer__site-map">
+      <div class="footer__site-map--link">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="services.html">Services</a>
+        <a href="web-project.html">Web Design</a>
+        <a href="photography.html">Photogaphy</a>
+      </div>
+
+      <div class="footer__social">
+        <p>life inspires creation, creation inspires life.</p>
+        <div class="footer__social--icons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa solid fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">© Copyright 2022. All Rights Reserved.</div>
+
+  </footer>
+  <script src="./js/main.js"></script>
+  <script src="./js/web-array.js"></script>
+</body>
+
+</html>

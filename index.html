@@ -2,75 +2,285 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
-    <link rel="icon" id="favicon" href="./assets/logo(1).png">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/fdaa837f4d.js" crossorigin="anonymous"></script>
+
+  <!-- Style Sheet-->
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- Swiperjs-->
+  <link rel="stylesheet" href="./css/swiper-bundle.css" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/logo_fox.png" type="image/png" />
+
+  <!-- Emailjs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/integration
+      emailjs.init("user_IY4bVPz-u7JOZ5shp");
+    })();
+  </script>
+
+  <title>Kenneth Brandon</title>
 </head>
 
 <body>
-    <div class="hero-container">
-        <div class="hero-text">
-            <h1 id="top">Kenneth</h1>
-            <h1 id="bottom">Brandon</h1>
-            <div class="attributes">
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./assets/logo_name.svg" alt="Website logo" />
+        </a>
+      </div>
+      <div class="ham" id="ham">
+        <img src="./assets/ham.svg" alt="Mobile menu icon" />
+      </div>
 
-                <p>designer</p>
-                <p>photographer</p>
-                <p>developer</p>
+      <div class="desktop-nav" id="desktop-nav">
+        <ul id="desktop-nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="web-project.html">Web Development</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="mobile-nav" id="mobile-nav">
+      <ul id="mobile-nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="web-project.html">Web Development</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
 
-            </div>
-        </div>
+      <div class="exit" id="exit">
+        <img src="./assets/exit.svg" alt="Mobile menu close icon" />
+      </div>
     </div>
+  </header>
 
-    <div class="content-container">
-        <div class="fade-banner"></div>
-        <div class="bio">
-            <div class="bio-text">
-                <h2>Hello!</h2>
-                <p>I’m Kenneth, a U.S. Air Force Veteran that’s passionate about expressing oneself through creativity
-                    and art. I spent my time in the military as an engine mechanic for the B1 Bomber. The knowledge and
-                    experience I got is second to none and it has helped shaped who I am today. When I wasn’t turning
-                    wrenches I was developing my other crafts; web design, web development and photography.</p>
+  <main class="main">
+    <!-- Create blurred darkened effect when the mobile nav is activated -->
 
-                <p>In February of 2021 I received my Bachelors of Science in Information Technology from Southern New
-                    Hampshire University. However, my journey with web development and design started in 2014 at the
-                    Office of Intercultural Relations in Old Dominion University. My education and learning path has
-                    truly been unconventional as well my many interests and passions in life. </p>
+    <div class="overlay hide"></div>
+    <section class="hero">
+      <div class="hero__content">
+        <h1>Creating a digital presence doesn’t have to be hard.</h1>
+        <p>
+          Great design & photography content helps to communicate your awesome
+          story, brand, or business to the world.
+        </p>
+        <p>
+          Learn how I can help with creating or improving your digital
+          presence.
+        </p>
+      </div>
+      <div class="hero__side-image">
+        <img src="./assets/blob(1).svg" alt="" />
+      </div>
+    </section>
+    <div class="spacer-lg"></div>
+    <section class="bio">
+      <div class="bio__image"></div>
+      <div class="bio__text-content">
+        <h2>Hi, I'm Kenneth!</h2>
+        <p>
+          I'm a frontend web developer and photographer doing all things
+          creative to make the web a more unique and awesome place.
+        </p>
+        <p>
+          With my experience in creating digital presences across many
+          platforms I can provide guidance, making sure your digital presence
+          is the best.
+        </p>
+      </div>
+    </section>
+    <div class="spacer-lg"></div>
 
-                <p>When not working on web projects or taking photos, you’ll find me scouring the internet for new music
-                    or enjoying a nice cup of coffee.
-
-                </p>
+    <!-- web dev section-->
+    <section class="web-sec">
+      <div class="web-sec__headline">
+        <h2>Web Design & Development</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ratione nulla, odit sed nihil esse quibusdam voluptatibus debitis sunt placeat.
+        </p>
+        <hr />
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide-thumbnail" id="s1"><a href="#"></a>
             </div>
-            <div class="bio-prof-img">
-                <div class="prof-img"></div>
+            <div class="swiper-slide-content">
+              <h3>Social Media Dashboard</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, repellat?</p>
+              <div class="swiper-slide-links">
+                <a href="https://github.com/kbrandon19/Social-Media-Dashboard">View Code</a>
+                <a href="https://kbrandon19.github.io/Social-Media-Dashboard/">Live Site</a>
+              </div>
             </div>
+            
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-thumbnail" id="s2">
+            </div>
+            <div class="swiper-slide-content">
+              <h3>Testimonial Grid</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, repellat?</p>
+              <div class="swiper-slide-links">
+                <a href="https://github.com/kbrandon19/Testimonial-Grid">View Code</a>
+                <a href="https://kbrandon19.github.io/Testimonial-Grid/">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-thumbnail" id="s3">
+            </div>
+            <div class="swiper-slide-content">
+              <h3>API Advice Generator</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, repellat?</p>
+              <div class="swiper-slide-links">
+                <a href="https://github.com/kbrandon19/Advice-Generator-API">View Code</a>
+                <a href="https://kbrandon19.github.io/Advice-Generator-API/">Live Site</a>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-        <div class="social-media">
-            <div class="icons">
-                
-                <a href="https://www.github.com/kbrandon19"><img src="./assets/github.svg" alt="Github" id="github"></a>
-                <a href="mailto:kbrandon319@gmail.com"><img src="./assets/gmail.svg" alt="Gmail" id="gmail"></a>
-                <a href="https://www.instagram.com/mrdebonairfox"><img src="./assets/instagram.svg" alt="Instagram" id="instagram"></a>
-                <a href="https://www.linkedin.com/in/kdbrand"><img src="./assets/linkedin.svg" alt="LinkedIn" id="linkedin"></a>
-                <a href="https://wa.me/14342227500"><img src="./assets/whatsapp.svg" alt="Whatsapp" id="whatsapp"></a>
-            </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+      </div>
+    </section>
+
+    <div class="spacer-lg"></div>
+    <!-- photogaphy section -->
+    <section class="photo-sec">
+      <div class="photo-sec__headline">
+        <h2>Pictures are worth more than a 1,000 words.</h2>
+        <p>
+          Through my photography I focus on capturing moments in a new and
+          different way; bringing your personality and vision to life.
+        </p>
+        <hr />
+      </div>
+      <div class="photo-sec__grid">
+        <a href="#">
+          <div class="photo-sec__grid-card" id="portraiture">
+            <span>Portraiture</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="photo-sec__grid-card" id="product">
+            <span>Product</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="photo-sec__grid-card" id="fashion">
+            <span>Fashion</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="photo-sec__grid-card" id="auto">
+            <span>Automotive</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="photo-sec__grid-card" id="interior">
+            <span>Interior</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="photo-sec__grid-card" id="food">
+            <span>Food</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <div class="spacer-md"></div>
+  <footer class="footer">
+    <!-- <div class="footer__logo">
+      <img src="./assets/logo_fox.png" alt="fox logo">
+    </div> -->
+    <div class="footer__site-map">
+      <div class="footer__site-map--link">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="services">Services</a>
+        <a href="web-project.html">Web Design</a>
+        <a href="photography.html">Photogaphy</a>
+      </div>
+
+      <div class="footer__social">
+        <p>life inspires creation, creation inspires life.</p>
+        <div class="footer__social--icons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa solid fa-linkedin"></i>
         </div>
+      </div>
     </div>
+    <div class="footer__copyright">
+      © Copyright 2022. All Rights Reserved.
+    </div>
+  </footer>
 
- 
+  <script src="./js/app.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript">
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: false,
 
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      scrollbar: {
+        draggable:true,
+      },
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
-    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
-    <script src="./js/main.js"></script>
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },1440: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    }})
+  </script>
 </body>
 
 </html>
