@@ -2,8 +2,7 @@
 
 
 
-const data = [{
-    id:1,
+const projectInfo = [{
     title:'Social Media Dashboard',
     mainImage:'../assets/smd/social-media-dashboard.jpgsocial-media-dashboard.jpg',
     descriptionOne:' The Social Media Dashboard was a cool project to tackle. Being able to learn about dark mode and how to incorporate a second color scheme was really nice. Not only was I able to learn the technically aspects of the toggle button but about color theory and how important choosing the right colors are. ',
@@ -19,7 +18,6 @@ const data = [{
    
     },
     {
-        id:2,
         title:'Testimonial Grid',
         mainImage:'',
         descriptionOne:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dignissimos sapiente molestiae. Ea, nemo ipsam.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam provident eius placeat.',
@@ -34,7 +32,6 @@ const data = [{
         subImage3:'',
     },
     {
-        id:3,
         title:'Advice API Generator',
         mainImage:'',
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dignissimos sapiente molestiae. Ea, nemo ipsam.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam provident eius placeat.',
@@ -43,7 +40,7 @@ const data = [{
         subImage1:'',
         subImage2:'',
         subImage3:'',
-    }]
+    }];
 
     function projectData(data){
 
@@ -107,5 +104,5 @@ const data = [{
       </section>`
     }
    
-    projectData;
+    console.log(projectData(projectInfo));
 
