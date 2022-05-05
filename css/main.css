@@ -212,8 +212,15 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
+/* light mode */
   background: linear-gradient(265deg, #f2ccba, #fdf3c6, #96c1d6);
+
+  /* dark mode  */
+  /* background: linear-gradient(265deg, #2f5073, #754f80, #75230e); */
+
+  /* dark mode - v2 */
+  /* background: linear-gradient(265deg, #0A3A85, #1262B5, #D36095,#9E4196,#0D3C9F); */
+
   background-size: 600% 600%;
 
   animation: AnimationName 10s ease infinite;
