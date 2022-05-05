@@ -3,12 +3,14 @@
 const ham = document.getElementById('ham');
 const mobileNav = document.getElementById('mobile-nav');
 const overlayEffect = document.getElementById('overlay');
+const main = document.querySelector('main');
 
 
 ham.addEventListener('click', ()=>{
 
-    mobileNav.classList.toggle('show');
-    overlayEffect.classList.toggle('show');
+    mobileNav.classList.toggle('show-nav');
+    overlayEffect.classList.toggle('show-overlay');
+    main.classList.toggle('main-overlay');
     
 })
 
