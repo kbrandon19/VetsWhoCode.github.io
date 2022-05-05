@@ -2,7 +2,16 @@
 
 const ham = document.getElementById('ham');
 const mobileNav = document.getElementById('mobile-nav');
-const exit = document.getElementById('exit');
+const overlayEffect = document.getElementById('overlay');
+
+
+ham.addEventListener('click', ()=>{
+
+    mobileNav.classList.toggle('show');
+    overlayEffect.classList.toggle('show');
+    
+})
+
 
 
 // intersection observer - changes the background color of the nav afer scrolling past a certain point
