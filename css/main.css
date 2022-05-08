@@ -242,7 +242,7 @@ p {
 .hero__content {
   width: 100%;
   height: auto;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
 @keyframes AnimationName {
@@ -256,18 +256,23 @@ p {
     background-position: 84% 0%;
   }
 }
-
-.hero__content > p {
-  font-size: 18px;
-}
-
 .hero__content > h1 {
   line-height: 1;
 }
+
 .hero__content > p {
   font-size: 18px;
-  margin-top: 4px;
+  max-width: 550px;
 }
+
+.hero__content > p#tag{
+  margin-top:1rem;
+}
+
+
+
+
+
 
 .hero__side-image {
   display: none;
