@@ -184,6 +184,7 @@ p {
   height: auto;
   display: none;
   margin-right: 2rem;
+  
 }
 .desktop-nav__links {
   padding: 0 1rem;
@@ -213,6 +214,9 @@ p {
   text-decoration: none;
   color: inherit;
 }
+
+/* Toggle */
+
 
 /* Hero Content */
 .hero {
