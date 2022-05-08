@@ -34,6 +34,7 @@ body {
   color: #000000;
   font-family: "Poppins", Helvetica, sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 /* removes the scrollbar */
@@ -61,8 +62,8 @@ p {
   backdrop-filter: blur(4px);
 }
 
-.show-overlay{
-  display:block;
+.show-overlay {
+  display: block;
 }
 
 @keyframes overlayFadeIn {
@@ -113,14 +114,14 @@ p {
   cursor: pointer;
 }
 
-.main-overlay{
+.main-overlay {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
 }
 .mobile-nav {
   width: 100%;
   height: 400px;
-  border-radius: 49% 51% 47% 53% / 37% 36% 64% 63% ;
+  border-radius: 50%;
   display: none;
   position: fixed;
   /* background-color: var(--red);  */
@@ -174,9 +175,6 @@ p {
   display: none;
 }
 
-
-
-
 /* Desktop Nav */
 
 .desktop-nav {
@@ -184,7 +182,6 @@ p {
   height: auto;
   display: none;
   margin-right: 2rem;
-  
 }
 .desktop-nav__links {
   padding: 0 1rem;
@@ -216,7 +213,6 @@ p {
 }
 
 /* Toggle */
-
 
 /* Hero Content */
 .hero {
@@ -269,19 +265,35 @@ p {
   max-width: 550px;
 }
 
-.hero__content > p#tag{
-  margin-top:1rem;
+.hero__content > p#tag {
+  margin-top: 1rem;
 }
-
-
-
-
-
 
 .hero__side-image {
   display: none;
   width: 50%;
   height: auto;
+}
+
+/* .hero__side-image img{
+  animation: rotation 50s infinite ease-in-out;
+
+} */
+
+.rotation {
+  animation: rotation 50s infinite ease-in-out;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .bio {
@@ -291,6 +303,17 @@ p {
   position: relative;
   flex-direction: column;
   justify-content: center;
+}
+
+.bio p#greeting {
+  width: 400px;
+  font-size: 4.5rem;
+  position: absolute;
+  top: 15rem;
+  font-weight: var(--fw-b);
+  line-height: 1;
+  color: white;
+  margin-left: 1rem;
 }
 
 .bio__text-content {
@@ -508,6 +531,18 @@ p {
     align-items: center;
   }
 
+  .bio p#greeting {
+    width: 400px;
+    font-size: 5.6rem;
+    position: absolute;
+    top: 14rem;
+    left: 0;
+    font-weight: var(--fw-b);
+    line-height: 1;
+    color: white;
+    margin-left: 1rem;
+  }
+
   .photo-sec,
   .web-sec {
     margin: 0 auto;
@@ -577,6 +612,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .bio p#greeting {
+    left: 5rem;
+  }
+}
+
 /* Desktop - 1440px */
 @media screen and (min-width: 1440px) {
   .nav {
@@ -604,6 +645,10 @@ p {
   .bio__text-content > p,
   .photo-sec__headline p {
     font-size: 20px;
+  }
+
+  .bio p#greeting {
+    left: 10rem;
   }
   .photo-sec__headline,
   .web-sec__headline {
