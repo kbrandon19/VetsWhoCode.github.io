@@ -23,6 +23,7 @@
   display: inline-block;
   animation:tada;
   animation-duration: 1s;
+  animation-iteration-count: 2;
   animation-delay: 1.1s;
   
 }
