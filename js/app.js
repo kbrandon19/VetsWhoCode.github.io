@@ -25,7 +25,6 @@ function rotation() {
 
 window.onresize = rotation;
 rotation();
-console.log(window.innerWidth);
 
 // intersection observer - changes the background color of the nav afer scrolling past a certain point
 const nav = document.querySelector("nav");
