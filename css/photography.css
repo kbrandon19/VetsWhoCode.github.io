@@ -2,9 +2,13 @@
 .portfolio {
     width: 100%;
     height: auto;
+    /* background-color: aqua; */
+    padding:5rem 1.5rem;
+    position: relative;
   }
 
   .portfolio__title {
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -27,122 +31,99 @@
     text-transform: uppercase;
     margin-left: 1rem;
   }
-  
-  .portfolio__grid {
-    width: auto;
-    max-width:1024px;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 10px;
-    
-  }
-  
-  .portfolio__grid-section {
-    width: 100%;
-    height: 162px;
-  }
-  
-  .portfolio__grid-section#p1 {
-    background-image: url("https://source.unsplash.com/random/?portrait,headshot");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .portfolio__grid-section#p2 {
-    background-image: url("https://source.unsplash.com/random/?portraiture");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .portfolio__grid-section#p3 {
-    background-image: url("https://source.unsplash.com/random/?fashion,portraiture");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .portfolio__grid-section#p4 {
-    background-image: url("https://source.unsplash.com/random/?portrait,editorial");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .portfolio__grid-section#p5 {
-    background-image: url("https://source.unsplash.com/random/?portraiture,photography");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .portfolio__grid-section#p6 {
-    background-image: url("https://source.unsplash.com/random/?fashion,model");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .portfolio__grid-section#p7 {
-    background-image: url("https://source.unsplash.com/random/?photography,model");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .portfolio__grid-section#p8 {
-    background-image: url("https://source.unsplash.com/random/?portrait,product");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .portfolio__grid-section#p9 {
-    background-image: url("https://source.unsplash.com/random/?portrait,high-fashion");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  /*tablet*/
-  @media screen and (min-width: 768px) {
-    .portfolio__title h1 {
-        font-size: 2rem;
-        margin-left: -2rem;
-      }
-    
-  .portfolio__grid-section {
-    height: 15rem;
-  }
+
+  .portfolio__grid{
+    display:grid;
+    width:100%;
+    height:auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 2rem; 
+    grid-template-areas:
+    "portait ."
+    ". automotive" 
+    "product ." 
+    ". fashion"
+    "interior ."; 
 }
-  /*desktop 1024*/
+
+  .portfolio__grid div{
+    width:100%;
+    max-width: 525px;
+    height:425px;
+  }
+
+  .portfolio__grid div#portrait{
+    background-image:url('/assets/photog-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: portait;
+
+  }
+  .portfolio__grid div#automotive{
+    background-image:url('/assets/photog-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: automotive;
+
+  }
+  .portfolio__grid div#product{
+    background-image:url('/assets/photog-3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: product;
+  }
+  .portfolio__grid div#fashion{
+    background-image:url('/assets/photog-4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: fashion;
+  }
+  .portfolio__grid div#interior{
+    background-image:url('/assets/photog-5.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area:interior
+  }
+
+  .portfolio__genre{
+    width:auto;
+    height:auto;
+    background-color: blueviolet;
+    position: absolute;
+    left:30%;
+    top:50%;
+    position:fixed;
+  }
+
+  .portfolio__genre p{
+    font-size: 10rem;
+
+  }
+  @media screen and (min-width: 768px) {}
+
   @media screen and (min-width: 1024px) {
-    .portfolio__grid {
-        margin:0 auto;
-        grid-template-columns: repeat(3, auto);
-      }
 
-      .portfolio__title {
-        padding: 0 2rem;
-      }
-      .portfolio__title h1 {
-        font-size: 2.5rem;
-      }
-    
-      .portfolio__title > .hori-rule {
-        width: 175px;
-      }
+    .portfolio{
+      padding:8rem 0rem;
+    }
+    .portfolio__grid{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(5, auto);
+      row-gap: 6rem; 
+      padding:0 3rem; 
+    }
 
-      .portfolio__grid-section {
-        height: 450px;
-      }
+    .portfolio__grid div{
+      height:625px;
+    }
+
+
 
   }
-
-  /*desktop 1440*/  
-  @media screen and (min-width: 1440px) {
-
-    .portfolio__title > .hori-rule {
-        width: 200px;
-      }
-
-    .portfolio__grid {
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(2, auto);
-      }
-  }
+  @media screen and (min-width: 1440px) {}
