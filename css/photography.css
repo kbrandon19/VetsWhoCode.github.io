@@ -2,8 +2,9 @@
 .portfolio {
     width: 100%;
     height: auto;
+    background-color: #fff;
     /* portraiture*/
-    background-color: #E8CDDA;
+    /* background-color: #E8CDDA; */
 
     /*automotive*/
     /* background-color: #AF4546; */
@@ -67,7 +68,7 @@
     height:425px;
   }
 
-  .portfolio__grid div#portrait{
+  .portfolio__grid .portrait{
     background-image:url('/assets/photog-1.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -75,7 +76,7 @@
     grid-area: portait;
 
   }
-  .portfolio__grid div#automotive{
+  .portfolio__grid .automotive{
     background-image:url('/assets/photog-2.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -83,21 +84,21 @@
     grid-area: automotive;
 
   }
-  .portfolio__grid div#product{
+  .portfolio__grid .product{
     background-image:url('/assets/photog-3.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: product;
   }
-  .portfolio__grid div#fashion{
+  .portfolio__grid .fashion{
     background-image:url('/assets/photog-4.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: fashion;
   }
-  .portfolio__grid div#interior{
+  .portfolio__grid .interior{
     background-image:url('/assets/photog-5.png');
     background-position: right;
     background-repeat: no-repeat;
@@ -124,11 +125,7 @@
     display:block;
   }
 
-  /* p#portrait{display:none;}
-  p#automotive{display:none;}
-  p#product{display:none;}
-  p#fashion{display:none;}
-  p#interior{display:none;} */
+
 
   @media screen and (min-width: 768px) {}
 
