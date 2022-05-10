@@ -2,7 +2,21 @@
 .portfolio {
     width: 100%;
     height: auto;
-    /* background-color: aqua; */
+    /* portraiture*/
+    background-color: #E8CDDA;
+
+    /*automotive*/
+    /* background-color: #AF4546; */
+
+    /* product */
+    /* background-color: #B1AFAA; */
+
+
+    /*fashion*/
+    /* background-color: #D2A97C; */
+
+    /*interior*/
+    /* background-color: #9F8E74; */
     padding:5rem 1.5rem;
     position: relative;
   }
@@ -94,17 +108,28 @@
   .portfolio__genre{
     width:auto;
     height:auto;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     position: absolute;
     left:30%;
-    top:50%;
+    top:40%;
     position:fixed;
+    color:white;
   }
-
-  .portfolio__genre p{
+  .portfolio__genre-type{display: none;}
+  .portfolio__genre-type p{
     font-size: 10rem;
-
   }
+
+  .show-genre{
+    display:block;
+  }
+
+  /* p#portrait{display:none;}
+  p#automotive{display:none;}
+  p#product{display:none;}
+  p#fashion{display:none;}
+  p#interior{display:none;} */
+
   @media screen and (min-width: 768px) {}
 
   @media screen and (min-width: 1024px) {
@@ -116,11 +141,12 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(5, auto);
       row-gap: 6rem; 
-      padding:0 3rem; 
+      padding:0 3rem;   
     }
 
     .portfolio__grid div{
       height:625px;
+      justify-self: center;
     }
 
 
