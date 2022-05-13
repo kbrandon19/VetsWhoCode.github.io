@@ -68,35 +68,37 @@
   cursor: pointer;
 }
 
-.portfolio__grid .portrait .portrait-text {
+.portait-text,.auto-text,.product-text,.fashion-text,.interior-text{
+  position:relative;
 }
 
-.portfolio__grid .portrait p,
-.portfolio__grid .automotive p,
+
+.portfolio__grid .portrait p{
+  font-size: 10rem;
+  position: absolute;
+  top: 400px;
+  left: 500px;
+  color:#fff;
+}
+
 .portfolio__grid .product p,
-.portfolio__grid .fashion p,
 .portfolio__grid .interior p {
   font-size: 10rem;
-  position: fixed;
+  position: absolute;
   top: 300px;
   left: 400px;
   color:#fff;
 }
 
-.portfolio__grid .portrait p {
-}
-.portfolio__grid .automotive p {
+.portfolio__grid .automotive p,.portfolio__grid .fashion p{
+  font-size: 10rem;
+  position: absolute;
+  color:#fff;
+  top:200px;
+  left:-500px;
 }
 
-.portfolio__grid .product p {
-  display: none;
-}
-.portfolio__grid .fashion p {
-  display: none;
-}
-.portfolio__grid .interior p {
-  display: none;
-}
+
 
 .portfolio__grid .portrait {
   background-image: url("/assets/photog-1.png");

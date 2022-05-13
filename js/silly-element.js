@@ -18,54 +18,77 @@ const interiorGrid = document.getElementsByClassName("interior");
 //genre text
 const portraitText = document.getElementById("portrait-text");
 const autoText = document.getElementById("auto-text");
+const productText = document.getElementById("product-text");
+const fashionText = document.getElementById("fashion-text");
+const interiorText = document.getElementById("interior-text");
+
 
 //grid wrapper
 const portfolioWrapper = document.getElementById("portfolio");
 
-// color change for Portait
-portraitGrid[0].addEventListener("mouseenter", () => {
-  portfolioWrapper.style.backgroundColor = portraitColor;
-  portraitText.classList.remove("hide");
-  portraitText.classList.add("show");
-});
-portraitGrid[0].addEventListener("mouseleave", () => {
-  portfolioWrapper.style.backgroundColor = defaultColor;
-  portraitText.classList.remove("show");
-  portraitText.classList.add("hide");
-});
 
-// color change for Auto
-automotiveGrid[0].addEventListener("mouseenter", () => {
-  portfolioWrapper.style.backgroundColor = autoColor;
-  autoText.classList.remove("hide");
-  autoText.classList.add("show");
-});
+        // color change for Portait
+        portraitGrid[0].addEventListener("mouseenter", () => {
+            portfolioWrapper.style.backgroundColor = portraitColor;
+            portraitText.classList.remove("hide");
+            portraitText.classList.add("show");
+            
+          });
+          portraitGrid[0].addEventListener("mouseleave", () => {
+            portfolioWrapper.style.backgroundColor = defaultColor;
+            portraitText.classList.remove("show");
+            portraitText.classList.add("hide");
+          });
+          
+          // color change for Auto
+          automotiveGrid[0].addEventListener("mouseenter", () => {
+            portfolioWrapper.style.backgroundColor = autoColor;
+            autoText.classList.remove("hide");
+            autoText.classList.add("show");
+          });
+          
+          automotiveGrid[0].addEventListener("mouseleave", () => {
+            portfolioWrapper.style.backgroundColor = defaultColor;
+            autoText.classList.remove("show");
+            autoText.classList.add("hide");
+          });
+          
+          //color change for Product
+          productGrid[0].addEventListener("mouseenter", () => {
+            portfolioWrapper.style.backgroundColor = productColor;
+            productText.classList.remove("hide");
+            productText.classList.add("show");
+          });
+          productGrid[0].addEventListener("mouseleave", () => {
+            portfolioWrapper.style.backgroundColor = defaultColor;
+            productText.classList.remove("show");
+            productText.classList.add("hide");
+          });
+          //color change for Fashion
+          fashionGrid[0].addEventListener("mouseenter", () => {
+            portfolioWrapper.style.backgroundColor = fashionColor;
+            fashionText.classList.remove("hide");
+            fashionText.classList.add("show");
+          });
+          fashionGrid[0].addEventListener("mouseleave", () => {
+            portfolioWrapper.style.backgroundColor = defaultColor;
+            fashionText.classList.remove("show");
+            fashionText.classList.add("hide");
+          });
+          
+          //color change for Interior
+          interiorGrid[0].addEventListener("mouseenter", () => {
+            portfolioWrapper.style.backgroundColor = interiorColor;
+            interiorText.classList.remove("hide");
+            interiorText.classList.add("show");
+          });
+          interiorGrid[0].addEventListener("mouseleave", () => {
+            portfolioWrapper.style.backgroundColor = defaultColor;
+            interiorText.classList.remove("show");
+            interiorText.classList.add("hide");
+          });
+          
 
-automotiveGrid[0].addEventListener("mouseleave", () => {
-  portfolioWrapper.style.backgroundColor = defaultColor;
-  autoText.classList.remove("show");
-  autoText.classList.add("hide");
-});
 
-//color change for Product
-productGrid[0].addEventListener("mouseenter", () => {
-  portfolioWrapper.style.backgroundColor = productColor;
-});
-productGrid[0].addEventListener("mouseleave", () => {
-  portfolioWrapper.style.backgroundColor = defaultColor;
-});
-//color change for Fashion
-fashionGrid[0].addEventListener("mouseenter", () => {
-  portfolioWrapper.style.backgroundColor = fashionColor;
-});
-fashionGrid[0].addEventListener("mouseleave", () => {
-  portfolioWrapper.style.backgroundColor = defaultColor;
-});
 
-//color change for Interior
-interiorGrid[0].addEventListener("mouseenter", () => {
-  portfolioWrapper.style.backgroundColor = interiorColor;
-});
-interiorGrid[0].addEventListener("mouseleave", () => {
-  portfolioWrapper.style.backgroundColor = defaultColor;
-});
+
