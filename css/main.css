@@ -34,7 +34,7 @@ body {
   color: #000000;
   font-family: "Poppins", Helvetica, sans-serif;
   margin: 0;
-  width:100%;
+  width: 100%;
 }
 
 /* removes the scrollbar */
@@ -659,7 +659,7 @@ p {
   }
 }
 
-@media screen and (min-width:1920px){
+@media screen and (min-width: 1920px) {
   .bio p#greeting {
     left: 26rem;
   }

@@ -1,67 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FontAwesome -->
-    <script
-      src="https://kit.fontawesome.com/fdaa837f4d.js"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Style Sheet-->
-    <link rel="stylesheet" href="./css/main.css" />
-    <!-- Swiperjs-->
-    <link rel="stylesheet" href="./css/swiper-bundle.css" />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/logo_fox.png" type="image/png" />
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/fdaa837f4d.js" crossorigin="anonymous"></script>
 
-    <!-- Animate Style-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+  <!-- Style Sheet-->
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- Swiperjs-->
+  <link rel="stylesheet" href="./css/swiper-bundle.css" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/logo_fox.png" type="image/png" />
 
-    <title>Kenneth Brandon</title>
-  </head>
+  <!-- Animate Style-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <body>
-    <header>
-      <nav class="nav">
-        <div class="logo">
-          <a href="index.html">
-            <img src="./assets/logo_name.svg" alt="Website logo" />
-          </a>
-        </div>
-        <div class="ham" id="ham">
-          <img src="./assets/ham.svg" alt="Mobile menu icon" />
-        </div>
+  <title>Kenneth Brandon</title>
+</head>
 
-        <div class="desktop-nav" id="desktop-nav">
-          <ul id="desktop-nav__links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="web-project.html">Web Development</a></li>
-            <li><a href="photography.html">Photography</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <!-- <div class="toggle"> 
-          <p>Dark Mode</p>
-          <input type="checkbox" name="" class="checkbox" id="checkbox">
-          <label for="checkbox" class="label">
-            <div class="ball"></div>
-          </label>
-        </div> -->
-        </div>
-      </nav>
-      <div
-        class="mobile-nav animate__animated animate__bounceInUp"
-        id="mobile-nav"
-      >
-        <ul id="mobile-nav__links">
+<body>
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./assets/logo_name.svg" alt="Website logo" />
+        </a>
+      </div>
+      <div class="ham" id="ham">
+        <img src="./assets/ham.svg" alt="Mobile menu icon" />
+      </div>
+
+      <div class="desktop-nav" id="desktop-nav">
+        <ul id="desktop-nav__links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
@@ -69,240 +43,247 @@
           <li><a href="photography.html">Photography</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <!-- <div class="toggle"> 
+          <p>Dark Mode</p>
+          <input type="checkbox" name="" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label">
+            <div class="ball"></div>
+          </label>
+        </div> -->
       </div>
-    </header>
+    </nav>
+    <div class="mobile-nav animate__animated animate__bounceInUp" id="mobile-nav">
+      <ul id="mobile-nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="web-project.html">Web Development</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <main class="main">
-      <!-- Create blurred darkened effect when the mobile nav is activated -->
+  <main class="main">
+    <!-- Create blurred darkened effect when the mobile nav is activated -->
 
-      <div class="overlay" id="overlay"></div>
-      <section class="hero">
-        <div class="hero__content">
-          <h1>Creating a digital presence doesn’t have to be hard.</h1>
-          <p>
-            Great design & photography content helps to communicate your awesome
-            story, brand, or business to the world.
-          </p>
-          <p id="tag">
-            Learn how I can help with creating or improving your digital
-            presence.
-          </p>
-        </div>
-        <div class="hero__side-image">
-          <img src="./assets/blob(1).svg" id="blob" alt="" />
-        </div>
-      </section>
-      <div class="spacer-lg"></div>
-      <section class="bio">
-        <p id="greeting">Hi, I'm Kenneth!</p>
-        <div class="bio__image"></div>
-        <div class="bio__text-content">
-          <!-- <h2>Hi, I'm Kenneth!</h2> -->
-          <p>
-            I'm a frontend web developer and photographer doing all things
-            creative to make the web a more unique and awesome place.
-          </p>
-          <p>
-            With my experience in creating digital presences across many
-            platforms I can provide guidance, making sure your digital presence
-            is the best.
-          </p>
-        </div>
-      </section>
-      <div class="spacer-lg"></div>
+    <div class="overlay" id="overlay"></div>
+    <section class="hero">
+      <div class="hero__content">
+        <h1>Creating a digital presence doesn’t have to be hard.</h1>
+        <p>
+          Great design & photography content helps to communicate your awesome
+          story, brand, or business to the world.
+        </p>
+        <p id="tag">
+          Learn how I can help with creating or improving your digital
+          presence.
+        </p>
+      </div>
+      <div class="hero__side-image">
+        <img src="./assets/blob(1).svg" id="blob" alt="" />
+      </div>
+    </section>
+    <div class="spacer-lg"></div>
+    <section class="bio">
+      <p id="greeting">Hi, I'm Kenneth!</p>
+      <div class="bio__image"></div>
+      <div class="bio__text-content">
+        <!-- <h2>Hi, I'm Kenneth!</h2> -->
+        <p>
+          I'm a frontend web developer and photographer doing all things
+          creative to make the web a more unique and awesome place.
+        </p>
+        <p>
+          With my experience in creating digital presences across many
+          platforms I can provide guidance, making sure your digital presence
+          is the best.
+        </p>
+      </div>
+    </section>
+    <div class="spacer-lg"></div>
 
-      <!-- web dev section-->
-      <section class="web-sec">
-        <div class="web-sec__headline">
-          <h2>Web Design & Development</h2>
-          <p>
-            I'm always working on something new to learn and sharpen my skills,
-            so be sure to check back to see what kind of code I've been cooking
-            up!
-          </p>
-          <hr />
-        </div>
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="swiper-slide-thumbnail" id="s1"></div>
-              <div class="swiper-slide-content">
-                <h3><a href="web-project.html">Social Media Dashboard</a></h3>
-                <p>
-                  Dashboard showing social account statistics with dark mode
-                  toggle.
-                </p>
-                <div class="swiper-slide-links">
-                  <a href="https://github.com/kbrandon19/Social-Media-Dashboard"
-                    >View Code</a
-                  >
-                  <a href="https://kbrandon19.github.io/Social-Media-Dashboard/"
-                    >Live Site</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide-thumbnail" id="s2"></div>
-              <div class="swiper-slide-content">
-                <h3>Testimonial Grid</h3>
-                <p>
-                  Testimonial layout component made with HTML, Tailwind CSS, and
-                  CSS Grid.
-                </p>
-                <div class="swiper-slide-links">
-                  <a href="https://github.com/kbrandon19/Testimonial-Grid"
-                    >View Code</a
-                  >
-                  <a href="https://kbrandon19.github.io/Testimonial-Grid/"
-                    >Live Site</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide-thumbnail" id="s3"></div>
-              <div class="swiper-slide-content">
-                <h3>API Advice Generator</h3>
-                <p>Quote generator using API Data using Javascript.</p>
-                <div class="swiper-slide-links">
-                  <a href="https://github.com/kbrandon19/Advice-Generator-API"
-                    >View Code</a
-                  >
-                  <a href="https://kbrandon19.github.io/Advice-Generator-API/"
-                    >Live Site</a
-                  >
-                </div>
+    <!-- web dev section-->
+    <section class="web-sec">
+      <div class="web-sec__headline">
+        <h2>Web Design & Development</h2>
+        <p>
+          I'm always working on something new to learn and sharpen my skills,
+          so be sure to check back to see what kind of code I've been cooking
+          up!
+        </p>
+        <hr />
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide-thumbnail" id="s1"></div>
+            <div class="swiper-slide-content">
+              <h3><a href="web-project.html">Social Media Dashboard</a></h3>
+              <p>
+                Dashboard showing social account statistics with dark mode
+                toggle.
+              </p>
+              <div class="swiper-slide-links">
+                <a href="https://github.com/kbrandon19/Social-Media-Dashboard">View Code</a>
+                <a href="https://kbrandon19.github.io/Social-Media-Dashboard/">Live Site</a>
               </div>
             </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-thumbnail" id="s2"></div>
+            <div class="swiper-slide-content">
+              <h3>Testimonial Grid</h3>
+              <p>
+                Testimonial layout component made with HTML, Tailwind CSS, and
+                CSS Grid.
+              </p>
+              <div class="swiper-slide-links">
+                <a href="https://github.com/kbrandon19/Testimonial-Grid">View Code</a>
+                <a href="https://kbrandon19.github.io/Testimonial-Grid/">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-thumbnail" id="s3"></div>
+            <div class="swiper-slide-content">
+              <h3>API Advice Generator</h3>
+              <p>Quote generator using API Data using Javascript.</p>
+              <div class="swiper-slide-links">
+                <a href="https://github.com/kbrandon19/Advice-Generator-API">View Code</a>
+                <a href="https://kbrandon19.github.io/Advice-Generator-API/">Live Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </section>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
 
-      <div class="spacer-lg"></div>
-      <!-- photogaphy section -->
-      <section class="photo-sec">
-        <div class="photo-sec__headline">
-          <h2>Pictures are worth more than a 1,000 words.</h2>
-          <p>
-            Through my photography I focus on capturing moments in a new and
-            different way; bringing your personality and vision to life.
-          </p>
-          <hr />
-        </div>
-        <div class="photo-sec__grid">
-          <a href="#">
-            <div class="photo-sec__grid-card" id="portraiture">
-              <span>Portraiture</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="photo-sec__grid-card" id="product">
-              <span>Product</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="photo-sec__grid-card" id="fashion">
-              <span>Fashion</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="photo-sec__grid-card" id="auto">
-              <span>Automotive</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="photo-sec__grid-card" id="interior">
-              <span>Interior</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="photo-sec__grid-card" id="food">
-              <span>Food</span>
-            </div>
-          </a>
-        </div>
-      </section>
-    </main>
-    <div class="spacer-md"></div>
-    <footer class="footer">
-      <!-- <div class="footer__logo">
+    <div class="spacer-lg"></div>
+    <!-- photogaphy section -->
+    <section class="photo-sec">
+      <div class="photo-sec__headline">
+        <h2>Pictures are worth more than a 1,000 words.</h2>
+        <p>
+          Through my photography I focus on capturing moments in a new and
+          different way; bringing your personality and vision to life.
+        </p>
+        <hr />
+      </div>
+      <div class="photo-sec__grid">
+        <a href="#">
+          <div class="photo-sec__grid-card" id="portraiture">
+            <span>Portraiture</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="photo-sec__grid-card" id="product">
+            <span>Product</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="photo-sec__grid-card" id="fashion">
+            <span>Fashion</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="photo-sec__grid-card" id="auto">
+            <span>Automotive</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="photo-sec__grid-card" id="interior">
+            <span>Interior</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="photo-sec__grid-card" id="food">
+            <span>Food</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <div class="spacer-md"></div>
+  <footer class="footer">
+    <!-- <div class="footer__logo">
       <img src="./assets/logo_fox.png" alt="fox logo">
     </div> -->
-      <div class="footer__site-map">
-        <div class="footer__site-map--link">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="services">Services</a>
-          <a href="web-project.html">Web Design</a>
-          <a href="photography.html">Photogaphy</a>
-        </div>
+    <div class="footer__site-map">
+      <div class="footer__site-map--link">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="services">Services</a>
+        <a href="web-project.html">Web Design</a>
+        <a href="photography.html">Photogaphy</a>
+      </div>
 
-        <div class="footer__social">
-          <p>life inspires creation, creation inspires life.</p>
-          <div class="footer__social--icons">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-envelope"></i>
-            <i class="fa solid fa-linkedin"></i>
-          </div>
+      <div class="footer__social">
+        <p>life inspires creation, creation inspires life.</p>
+        <div class="footer__social--icons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa solid fa-linkedin"></i>
         </div>
       </div>
-      <div class="footer__copyright">
-        © Copyright 2022. All Rights Reserved.
-      </div>
-    </footer>
+    </div>
+    <div class="footer__copyright">
+      © Copyright 2022. All Rights Reserved.
+    </div>
+  </footer>
 
-    <script src="./js/app.js"></script>
-    <script src="./js/menu-scroll.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script type="text/javascript">
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: false,
+  <script src="./js/app.js"></script>
+  <script src="./js/menu-scroll.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript">
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: false,
 
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        scrollbar: {
-          draggable: true,
-        },
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      scrollbar: {
+        draggable: true,
+      },
 
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        // when window width is >= 768px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
         },
-        breakpoints: {
-          // when window width is >= 768px
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          1440: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
         },
-      });
-    </script>
-  </body>
+        1440: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+</body>
+
 </html>
