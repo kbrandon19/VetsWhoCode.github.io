@@ -1,52 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FontAwesome -->
-    <script
-      src="https://kit.fontawesome.com/fdaa837f4d.js"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Style Sheet-->
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/photography.css" />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/logo_fox.png" type="image/png" />
-    <title>Photography</title>
-  </head>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/fdaa837f4d.js" crossorigin="anonymous"></script>
 
-  <body>
-    <header>
-      <nav class="nav">
-        <div class="logo">
-          <a href="index.html">
-            <img src="./assets/logo_name.svg" alt="Website logo" />
-          </a>
-        </div>
-        <div class="ham" id="ham">
-          <img src="./assets/ham.svg" alt="Mobile menu icon" />
-        </div>
+  <!-- Style Sheet-->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/photography.css" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/logo_fox.png" type="image/png" />
+  <title>Photography</title>
+</head>
 
-        <div class="desktop-nav" id="desktop-nav">
-          <ul id="desktop-nav__links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="web-project.html">Web Development</a></li>
-            <li><a href="photography.html">Photography</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div
-        class="mobile-nav animate__animated animate__bounceInUp"
-        id="mobile-nav"
-      >
-        <ul id="mobile-nav__links">
+<body>
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./assets/logo_name.svg" alt="Website logo" />
+        </a>
+      </div>
+      <div class="ham" id="ham">
+        <img src="./assets/ham.svg" alt="Mobile menu icon" />
+      </div>
+
+      <div class="desktop-nav" id="desktop-nav">
+        <ul id="desktop-nav__links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
@@ -55,18 +39,29 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-    </header>
+    </nav>
+    <div class="mobile-nav animate__animated animate__bounceInUp" id="mobile-nav">
+      <ul id="mobile-nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="web-project.html">Web Development</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <main>
-      <div class="overlay" id="overlay"></div>
-      <div class="spacer-sm"></div>
+  <main>
+    <div class="overlay" id="overlay"></div>
+    <div class="spacer-sm"></div>
 
-      <div class="portfolio" id="portfolio">
-        <!-- <div class="portfolio__title">
+    <div class="portfolio" id="portfolio">
+      <!-- <div class="portfolio__title">
             <div class="hori-rule"></div>
             <h1>Portraiture</h1>
           </div> -->
-        <!-- <div class="portfolio__genre">
+      <!-- <div class="portfolio__genre">
           <div class="portfolio__genre-type" id="portrait">
             <p>Portrait</p>
           </div>
@@ -84,51 +79,62 @@
           </div>
         </div> -->
 
-        <div class="portfolio__grid">
-          <div class="portrait">
-            <div class="portrait-text hide" id="portrait-text">
-              <p>Portrait</p>
-            </div>
+      <div class="portfolio__grid">
+        <div class="portrait">
+          <div class="portrait-text hide" id="portrait-text">
+            <p>Portrait</p>
           </div>
-          <div class="automotive"><p>Automotive</p></div>
-          <div class="product"><p>Product</p></div>
-          <div class="fashion"><p>Fashion</p></div>
-          <div class="interior"><p>Interior</p></div>
+        </div>
+        <div class="automotive">
+          <div class="auto-text hide" id="auto-text">
+            <p>Automotive</p>
+          </div>
+        </div>
+        <div class="product">
+          <p>Product</p>
+        </div>
+        <div class="fashion">
+          <p>Fashion</p>
+        </div>
+        <div class="interior">
+          <p>Interior</p>
         </div>
       </div>
-    </main>
-    <footer class="footer">
-      <!-- <div class="footer__logo">
+    </div>
+  </main>
+  <footer class="footer">
+    <!-- <div class="footer__logo">
         <img src="./assets/logo_fox.png" alt="fox logo">
       </div> -->
-      <div class="footer__site-map">
-        <div class="footer__site-map--link">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="services.html">Services</a>
-          <a href="web-project.html">Web Design</a>
-          <a href="photography.html">Photogaphy</a>
-        </div>
+    <div class="footer__site-map">
+      <div class="footer__site-map--link">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="services.html">Services</a>
+        <a href="web-project.html">Web Design</a>
+        <a href="photography.html">Photogaphy</a>
+      </div>
 
-        <div class="footer__social">
-          <p>life inspires creation, creation inspires life.</p>
-          <div class="footer__social--icons">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-envelope"></i>
-            <i class="fa solid fa-linkedin"></i>
-          </div>
+      <div class="footer__social">
+        <p>life inspires creation, creation inspires life.</p>
+        <div class="footer__social--icons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa solid fa-linkedin"></i>
         </div>
       </div>
-      <div class="footer__copyright">
-        © Copyright 2022. All Rights Reserved.
-      </div>
-    </footer>
+    </div>
+    <div class="footer__copyright">
+      © Copyright 2022. All Rights Reserved.
+    </div>
+  </footer>
 
-    <script src="./js/app.js"></script>
-    <script src="./js/silly-element.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/silly-element.js"></script>
 
-  </body>
+</body>
+
 </html>
