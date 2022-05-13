@@ -29,9 +29,14 @@ const portfolioWrapper = document.getElementById("portfolio");
 
         // color change for Portait
         portraitGrid[0].addEventListener("mouseenter", () => {
+
+          if(window.innerWidth > 1024){
             portfolioWrapper.style.backgroundColor = portraitColor;
             portraitText.classList.remove("hide");
             portraitText.classList.add("show");
+          }else{
+            portfolioWrapper.style.backgroundColor = defaultColor;
+          }
             
           });
           portraitGrid[0].addEventListener("mouseleave", () => {
@@ -42,9 +47,13 @@ const portfolioWrapper = document.getElementById("portfolio");
           
           // color change for Auto
           automotiveGrid[0].addEventListener("mouseenter", () => {
+            if(window.innerWidth > 1024){
             portfolioWrapper.style.backgroundColor = autoColor;
             autoText.classList.remove("hide");
             autoText.classList.add("show");
+            }else{
+            portfolioWrapper.style.backgroundColor = defaultColor;
+          }
           });
           
           automotiveGrid[0].addEventListener("mouseleave", () => {
@@ -55,9 +64,13 @@ const portfolioWrapper = document.getElementById("portfolio");
           
           //color change for Product
           productGrid[0].addEventListener("mouseenter", () => {
+            if(window.innerWidth > 1024){
             portfolioWrapper.style.backgroundColor = productColor;
             productText.classList.remove("hide");
             productText.classList.add("show");
+            }else{
+            portfolioWrapper.style.backgroundColor = defaultColor;
+          }
           });
           productGrid[0].addEventListener("mouseleave", () => {
             portfolioWrapper.style.backgroundColor = defaultColor;
@@ -66,9 +79,13 @@ const portfolioWrapper = document.getElementById("portfolio");
           });
           //color change for Fashion
           fashionGrid[0].addEventListener("mouseenter", () => {
+            if(window.innerWidth > 1024){
             portfolioWrapper.style.backgroundColor = fashionColor;
             fashionText.classList.remove("hide");
             fashionText.classList.add("show");
+            }else{
+            portfolioWrapper.style.backgroundColor = defaultColor;
+          }
           });
           fashionGrid[0].addEventListener("mouseleave", () => {
             portfolioWrapper.style.backgroundColor = defaultColor;
@@ -78,9 +95,13 @@ const portfolioWrapper = document.getElementById("portfolio");
           
           //color change for Interior
           interiorGrid[0].addEventListener("mouseenter", () => {
+            if(window.innerWidth > 1024){
             portfolioWrapper.style.backgroundColor = interiorColor;
             interiorText.classList.remove("hide");
             interiorText.classList.add("show");
+            }else{
+            portfolioWrapper.style.backgroundColor = defaultColor;
+          }
           });
           interiorGrid[0].addEventListener("mouseleave", () => {
             portfolioWrapper.style.backgroundColor = defaultColor;

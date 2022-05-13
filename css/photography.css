@@ -54,11 +54,11 @@
   grid-template-rows: repeat(5, auto);
   row-gap: 2rem;
   grid-template-areas:
-    "portait ."
-    ". automotive"
-    "product ."
-    ". fashion"
-    "interior .";
+    "portait"
+    "automotive"
+    "product"
+    "fashion"
+    "interior";
 }
 
 .portfolio__grid div {
@@ -70,6 +70,7 @@
 
 .portait-text,.auto-text,.product-text,.fashion-text,.interior-text{
   position:relative;
+  visibility: hidden;
 }
 
 
@@ -162,6 +163,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -173,11 +175,22 @@
     grid-template-rows: repeat(5, auto);
     row-gap: 6rem;
     padding: 0 3rem;
+    grid-template-areas:
+    "portait ."
+    ". automotive"
+    "product ."
+    ". fashion"
+    "interior .";
   }
 
   .portfolio__grid div {
     height: 625px;
     justify-self: center;
+  }
+
+  .portait-text,.auto-text,.product-text,.fashion-text,.interior-text{
+    position:relative;
+    visibility: visible;
   }
 }
 @media screen and (min-width: 1440px) {
