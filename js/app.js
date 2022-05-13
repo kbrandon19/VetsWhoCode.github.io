@@ -27,6 +27,8 @@ window.onresize = rotation;
 rotation();
 
 // intersection observer - changes the background color of the nav afer scrolling past a certain point
+
+// Home Page
 const nav = document.querySelector("nav");
 const sectionOne = document.querySelector(".hero__content");
 
@@ -47,8 +49,4 @@ const sectionOneObserver = new IntersectionObserver(function (
 sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
-
-
-
-
 

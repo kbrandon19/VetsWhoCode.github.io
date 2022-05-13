@@ -658,3 +658,9 @@ p {
     height: 350px;
   }
 }
+
+@media screen and (min-width:1920px){
+  .bio p#greeting {
+    left: 26rem;
+  }
+}

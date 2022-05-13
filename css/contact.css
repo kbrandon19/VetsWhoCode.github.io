@@ -1,4 +1,7 @@
 /* Contact Form */
+.nav {
+  background-color: #ffffff;
+}
 
 .contact {
     width: 100%;
@@ -9,7 +12,7 @@
     align-items: center;
     margin: 0 auto;
   }
-  
+
   .contact__heading {
     width: auto;
     height: auto;

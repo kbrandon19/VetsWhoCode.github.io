@@ -1,5 +1,9 @@
 /* About */
 
+.nav {
+  background-color: #ffffff;
+}
+
 .about {
   max-width: 1024px;
   height: auto;
