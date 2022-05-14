@@ -26,7 +26,7 @@
     var(--color2),
     var(--color3)
   );
-  --body-text: #111111;
+  --body-text: #1e1e1e;
   --body-bkg: #ffffff;
 }
 
@@ -48,7 +48,7 @@
     var(--color3)
   );
   --body-text: #ffffff;
-  --body-bkg: #111111;
+  --body-bkg: #1e1e1e;
 }
 
 /* Custom Classes */
@@ -134,7 +134,7 @@ p {
 
 .nav-scrolled {
   box-shadow: 0px 0px 55px -27px rgba(0, 0, 0, 0.75);
-  background-color: #ffffff;
+  background-color: var(--body-bkg);
 }
 
 /*  Mobile Nav */
@@ -142,6 +142,16 @@ p {
   width: auto;
   height: auto;
   margin-left: 2rem;
+}
+
+.logo p{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: var(--fw-b);
+  color:var(--body-text);
+  line-height: 1;
+  transition: color 300ms ease;
 }
 
 .ham {
@@ -398,7 +408,7 @@ p {
   width: 100%;
   max-width: 500px;
   height: auto;
-  background-color: rgba(255, 255, 255, 0.677);
+  /* background-color: rgba(255, 255, 255, 0.677); */
   padding: 1.5rem;
 }
 

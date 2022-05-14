@@ -1,3 +1,7 @@
+.nav{
+  background-color: var(--body-bkg);
+}
+
 .web-project {
     width: 100%;
     height: auto;

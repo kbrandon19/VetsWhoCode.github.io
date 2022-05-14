@@ -1,7 +1,6 @@
 /* Contact Form */
 .nav {
-  background-color: #ffffff;
-}
+  background-color: var(--body-bkg);}
 
 .contact {
   width: 100%;

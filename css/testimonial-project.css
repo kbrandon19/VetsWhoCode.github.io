@@ -1,6 +1,5 @@
 .nav {
-  background-color: #ffffff;
-}
+  background-color: var(--body-bkg);}
 
 .web-project {
   width: 100%;

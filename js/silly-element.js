@@ -1,7 +1,7 @@
 //photography genre type display when hover
 
 // various background colors
-let defaultColor = "#ffffff";
+let defaultColor = document.querySelector(body.backgroundColor);
 let portraitColor = "#E8CDDA";
 let autoColor = "#AF4546";
 let productColor = "#B1AFAA";

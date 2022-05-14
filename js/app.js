@@ -6,6 +6,7 @@ checkbox.addEventListener('change', function(event){
     document.body.removeAttribute('data-theme');
   });
 
+
 // toggle for mobile menu
 
 const ham = document.getElementById("ham");

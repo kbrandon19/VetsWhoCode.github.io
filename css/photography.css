@@ -1,13 +1,12 @@
 /* photography page */
 
 .nav {
-  background-color: #ffffff;
-}
+  background-color: var(--body-bkg);}
 
 .portfolio {
   width: 100%;
   height: auto;
-  background-color: #fff;
+  background-color: var(--body-bkg);
   /* portraiture*/
   /* background-color: #E8CDDA; */
 
