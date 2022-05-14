@@ -258,8 +258,14 @@ p {
 
 .desktop-nav .toggle .checkbox:checked + .label .ball {
   transform: translateX(24px);
-  background-color: rgb(163, 193, 238);
+  background-color: #2f5073;
 }
+
+.desktop-nav .toggle .checkbox:checked + .label {
+  background-color: #badcff;
+}
+
+
 
 .desktop-nav .toggle .label {
   width: 50px;
@@ -267,7 +273,7 @@ p {
 
   display: flex;
   border-radius: 50px;
-  background-color: #fdf7f7;
+  background-color: #b4b3b3;
   position: relative;
   display: flex;
 
@@ -281,7 +287,7 @@ p {
   width: 18px;
   height: 18px;
   left: 4px;
-  background-color: red;
+  background-color:#fff;
   border-radius: 50%;
   transition: transform 0.5s ease;
 }
