@@ -24,7 +24,7 @@
   /* background-color: #9F8E74; */
   padding: 5rem 1.5rem;
   position: relative;
-  transition: background-color 400ms ease;
+  transition: background-color 500ms ease-in-out;
 }
 
 .portfolio__title {
@@ -85,15 +85,19 @@
   top: 400px;
   left: 500px;
   color:#fff;
+  text-shadow: 5px 2px 7px rgba(0,0,0,0.20);
+
 }
 
 .portfolio__grid .product p,
 .portfolio__grid .interior p {
   font-size: 10rem;
   position: absolute;
-  top: 300px;
+  top: 200px;
   left: 400px;
   color:#fff;
+  text-shadow: 5px 2px 7px rgba(0,0,0,0.20);
+
 }
 
 .portfolio__grid .automotive p,.portfolio__grid .fashion p{
@@ -102,6 +106,8 @@
   color:#fff;
   top:200px;
   left:-500px;
+  text-shadow: 5px 2px 7px rgba(0,0,0,0.20);
+
 }
 
 
@@ -142,22 +148,6 @@
   grid-area: interior;
 }
 
-.portfolio__genre {
-  width: auto;
-  height: auto;
-  /* background-color: blueviolet; */
-  position: absolute;
-  left: 30%;
-  top: 40%;
-  position: fixed;
-  color: white;
-}
-.portfolio__genre-type {
-  display: none;
-}
-.portfolio__genre-type p {
-  font-size: 10rem;
-}
 
 .show {
   display: block;

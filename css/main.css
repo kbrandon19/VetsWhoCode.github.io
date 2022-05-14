@@ -13,6 +13,42 @@
   --fw-m: 500;
   --fw-sb: 600;
   --fw-b: 700;
+
+  /* light mode - gradients */
+  --color1: #f2ccba;
+  --color2: #fdf3c6;
+  --color3: #96c1d6;
+
+  /* Light Mode */
+  --bg-gradient: linear-gradient(
+    265deg,
+    var(--color1),
+    var(--color2),
+    var(--color3)
+  );
+  --body-text: #111111;
+  --body-bkg: #ffffff;
+}
+
+/* Dark Mode Theme */
+* {
+  transition: 300ms ease;
+}
+
+[data-theme="dark"] {
+  /* dark mode - gradients  */
+  --color1: #2f5073;
+  --color2: #754f80;
+  --color3: #75230e;
+
+  --bg-gradient: linear-gradient(
+    265deg,
+    var(--color1),
+    var(--color2),
+    var(--color3)
+  );
+  --body-text: #ffffff;
+  --body-bkg: #111111;
 }
 
 /* Custom Classes */
@@ -31,7 +67,8 @@
 }
 
 body {
-  color: #000000;
+  color: var(--body-text);
+  background-color: var(--body-bkg);
   font-family: "Poppins", Helvetica, sans-serif;
   margin: 0;
   width: 100%;
@@ -182,6 +219,7 @@ p {
   height: auto;
   display: none;
   margin-right: 2rem;
+  position: relative;
 }
 .desktop-nav__links {
   padding: 0 1rem;
@@ -213,6 +251,40 @@ p {
 }
 
 /* Toggle */
+.desktop-nav .toggle .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.desktop-nav .toggle .checkbox:checked + .label .ball {
+  transform: translateX(24px);
+  background-color: rgb(163, 193, 238);
+}
+
+.desktop-nav .toggle .label {
+  width: 50px;
+  height: 24px;
+
+  display: flex;
+  border-radius: 50px;
+  background-color: #fdf7f7;
+  position: relative;
+  display: flex;
+
+  align-items: center;
+  padding: 5px;
+  transition: background-color 0.5s ease-in;
+}
+
+.desktop-nav .toggle .label .ball {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 4px;
+  background-color: red;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
 
 /* Hero Content */
 .hero {
@@ -226,7 +298,7 @@ p {
   justify-content: center;
   align-items: flex-start;
   /* light mode */
-  background: linear-gradient(265deg, #f2ccba, #fdf3c6, #96c1d6);
+  background: linear-gradient(265deg, var(--color1), var(--color2), var(--color3));
 
   /* dark mode  */
   /* background: linear-gradient(265deg, #2f5073, #754f80, #75230e); */
@@ -442,7 +514,7 @@ p {
   width: 100%;
   height: auto;
   /* background-color: #9e9e9e; */
-  background: linear-gradient(265deg, #f2ccba, #fdf3c6, #96c1d6);
+  background: linear-gradient(265deg, var(--color1), var(--color2), var(--color3));
   background-size: 600% 600%;
 
   animation: AnimationName 10s ease infinite;
@@ -557,7 +629,7 @@ p {
   }
 
   .desktop-nav {
-    display: block;
+    display: flex;
   }
   .ham {
     display: none;
@@ -614,7 +686,7 @@ p {
 
 @media screen and (min-width: 1280px) {
   .bio p#greeting {
-    left: 5rem;
+    left: 6rem;
   }
 }
 
