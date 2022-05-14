@@ -2,10 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --peach: #fdd5c2;
-  --red: #c8553d;
-  --green: #588b8b;
-  --creme: #f4f1de;
+
 
   /* Font Weights */
   --fw-l: 300;
@@ -14,18 +11,14 @@
   --fw-sb: 600;
   --fw-b: 700;
 
-  /* light mode - gradients */
+  /* light mode - background gradients */
   --color1: #f2ccba;
   --color2: #fdf3c6;
   --color3: #96c1d6;
 
+  
+
   /* Light Mode */
-  --bg-gradient: linear-gradient(
-    265deg,
-    var(--color1),
-    var(--color2),
-    var(--color3)
-  );
   --body-text: #1e1e1e;
   --body-bkg: #ffffff;
 }
@@ -36,7 +29,7 @@
 }
 
 [data-theme="dark"] {
-  /* dark mode - gradients  */
+  /* dark mode - background gradients  */
   --color1: #2f5073;
   --color2: #754f80;
   --color3: #75230e;
@@ -168,22 +161,24 @@ p {
 .mobile-nav {
   width: 100%;
   height: 400px;
-  /* border-radius: 50%; */
+  /* border-radius:22% 78% 26% 74% / 68% 34% 66% 32% ; */
   display: none;
   position: fixed;
-  /* background-color: var(--red);  */
-  background: linear-gradient(265deg, #f87537, #fba81f);
+  background: linear-gradient(265deg, var(--color1), var(--color2));
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   bottom: -10px;
   z-index: 10;
+  opacity: 0;
+  transition: opacity 300ms ease;
 }
 
 .show-nav {
   display: block;
-  animation: bounceUp;
-  animation-duration: 300ms;
+  opacity: 1;
+  /* animation: bounceUp;
+  animation-duration: 300ms; */
 }
 
 .mobile-nav ul {

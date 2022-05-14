@@ -160,8 +160,8 @@
 
 .inner-grid #img3 {
   grid-area: "img3";
-  background-image: url("/assets/smd/detail1.png");
-  background-position: top;
+  background-image: url("/assets/smd/code-ex.png");
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 }
