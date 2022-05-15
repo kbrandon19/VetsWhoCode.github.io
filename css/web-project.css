@@ -1,5 +1,6 @@
 .nav {
-  background-color: var(--body-bkg);}
+  background-color: var(--body-bkg);
+}
 
 .web-project {
   width: 100%;
@@ -60,6 +61,10 @@
 .web-project__grid__content-info {
   padding: 1.5rem;
   grid-area: "info";
+}
+
+.web-project__grid__content-info p {
+  max-width: 700px;
 }
 
 .web-project__grid__content-info > p:nth-child(1) {
@@ -224,6 +229,8 @@
 
   .web-project__grid__content-info {
     align-self: center;
+    justify-self: center;
+    margin-top: -5rem;
   }
 
   .web-project__grid__main-image {
