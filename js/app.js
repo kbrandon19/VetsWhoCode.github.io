@@ -1,11 +1,28 @@
 //dark / light mode toggle
 let checkbox = document.getElementById('checkbox');
 
-checkbox.addEventListener('change', function(event){
-  localStorage.setItem('dark',this.checked);
-    (event.target.checked) ? document.body.setAttribute('data-theme', 'dark') : 
-    document.body.removeAttribute('data-theme');
-  });
+
+// Ternary Operator - condition ? true : false
+  checkbox.addEventListener('change', function(event){
+    
+    localStorage.setItem('dark',this.checked);
+
+      (event.target.checked) ? document.body.setAttribute('data-theme', 'dark') : 
+      document.body.removeAttribute('data-theme');
+    });
+  
+  // function themeChecker(){
+  //   if(localStorage.getItem(('dark')==="false")){
+  //     document.body.setAttribute('data-theme', 'dark')
+  //   }
+  //   else{
+  //     localStorage.getItem(('dark')==="true");
+  //     document.body.removeAttribute('data-theme');
+  //   }
+  // }
+  
+  // checkbox.addEventListener('change', themeChecker());
+
 
 
 
