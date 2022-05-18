@@ -13,6 +13,7 @@
   --color1: #f2ccba;
   --color2: #fdf3c6;
   --color3: #96c1d6;
+  --contact-btn: #96c1d6;
 
   /* Light Mode */
   --body-text: #1e1e1e;
@@ -21,7 +22,7 @@
 
 /* Dark Mode Theme */
 * {
-  transition: 300ms ease;
+  transition: 200ms ease;
 }
 
 [data-theme="dark"] {
@@ -29,6 +30,7 @@
   --color1: #2f5073;
   --color2: #754f80;
   --color3: #75230e;
+  --contact-btn: #754f80;
 
   --bg-gradient: linear-gradient(
     265deg,
@@ -238,15 +240,15 @@ p {
 
 .desktop-nav ul li:nth-child(6) {
   padding: 5px 20px;
-  background-color: #96c1d6;
-  border: 2px solid #96c1d6;
+  background-color: var(--contact-btn);
+  border: 2px solid var(--contact-btn);
   border-radius: 50px;
   transition: background-color 700ms ease;
   cursor: pointer;
 }
 
 .desktop-nav ul li:nth-child(6):hover {
-  background-color: #ffffff;
+  background-color: var(--body-bkg);
 }
 
 .desktop-nav ul li a {
@@ -287,7 +289,6 @@ p {
   background-color: #b4b3b3;
   position: relative;
   display: flex;
-
   align-items: center;
   padding: 5px;
   transition: background-color 0.5s ease-in;
@@ -301,6 +302,7 @@ p {
   background-color: #fff;
   border-radius: 50%;
   transition: transform 0.5s ease;
+  cursor: pointer;
 }
 
 /* Hero Content */

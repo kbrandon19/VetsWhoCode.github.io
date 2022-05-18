@@ -1,6 +1,7 @@
 /* Contact Form */
 .nav {
-  background-color: var(--body-bkg);}
+  background-color: var(--body-bkg);
+}
 
 .contact {
   width: 100%;
@@ -87,21 +88,22 @@ button {
   width: 40%;
   padding: 12px 30px;
   font-size: 12px;
-  background-color: #96c1d6;
-  color: rgb(0, 0, 0);
+  background-color: var(--contact-btn);
+  color: var(--body-text);
   border: none;
   font-weight: var(--fw-b);
   border-radius: 25px;
+  border: 2px solid var(--contact-btn);
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: background-color 700ms ease;
-  transition: color 200ms ease;
+
   cursor: pointer;
 }
 
 button:hover {
-  background-color: rgb(251, 130, 78);
-  color: #ffffff;
+  background-color: var(--body-bkg);
+  color: var(--body-text);
 }
 
 @media screen and (min-width: 1024px) {

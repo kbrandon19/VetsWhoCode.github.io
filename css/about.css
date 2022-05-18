@@ -1,7 +1,8 @@
 /* About */
 
 .nav {
-  background-color: var(--body-bkg);}
+  background-color: var(--body-bkg);
+}
 
 .about {
   max-width: 1024px;
@@ -69,14 +70,14 @@
 }
 .about__contact a {
   padding: 5px 20px;
-  background-color: #96c1d6;
+  background-color: var(--contact-btn);
   border-radius: 50px;
   transition: background-color 700ms ease;
-  border: 2px solid #96c1d6;
+  border: 2px solid var(--contact-btn);
 }
 
 .about__contact a:hover {
-  background-color: #fff;
+  background-color: var(--body-bkg);
 }
 
 /* tablet*/
