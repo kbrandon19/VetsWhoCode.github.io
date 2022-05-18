@@ -120,17 +120,17 @@
 
 .swiper-slide-links a{
   padding: 5px 20px;
-  background-color: #96c1d6;
+  background-color: var(--contact-btn);
   border-radius: 50px;
-  border: 2px solid #96c1d6;
+  border: 2px solid var(--contact-btn);
   transition: border 700ms ease;
-  transition: background 700ms ease;
+  transition: background-color 700ms ease;
   cursor: pointer;
   font-size: 12px;
 }
 
 .swiper-slide-links a:hover{
-  background-color: #fff;
+  background-color: var(--body-bkg);
 }
 /* Auto Height */
 .swiper-autoheight,

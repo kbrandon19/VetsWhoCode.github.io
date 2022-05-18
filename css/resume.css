@@ -2,6 +2,10 @@
   background-color: var(--body-bkg);
 }
 
+hr{
+  border:1px solid #6C7EA0;
+}
+
 .resume{
     width:100%;
     height:auto;
@@ -10,12 +14,11 @@
 .resume__intro{
     width:100%;
     height:auto;
-    padding:1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(265deg, #f2ccba, #fdf3c6, #96c1d6);
+    background:var(--body-bkg);
     background-size: 600% 600%;
   
     animation: AnimationName 10s ease infinite;
@@ -34,6 +37,7 @@
   }
 
 .resume__intro h1{
+  padding:1.5rem;
     font-size: 2.5rem;
     line-height: 1;
     max-width: 500px;
@@ -41,7 +45,11 @@
 
 .resume__intro__secondary{
     width: 100%;
-    height:auto;
+    height:250px;
+    max-height:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
     margin:2rem 0;
     padding:1rem;
     background-color: #6C7EA0;
@@ -49,9 +57,22 @@
     letter-spacing: .5px;
 }
 
+.resume__skills,.resume__lang-tools{
+  padding:1.5rem;
+}
+
+
+.resume__skills-list{
+  width:100%;
+  height:auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 @media screen and (min-width:768px){
     .resume__intro{
         flex-direction: row;
-        justify-content: ;
     }
 }
