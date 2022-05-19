@@ -57,7 +57,7 @@ hr{
     letter-spacing: .5px;
 }
 
-.resume__skills,.resume__lang-tools{
+.resume__skills,.resume__lang-tools,.resume__exp,.resume__projects{
   padding:1rem;
 }
 

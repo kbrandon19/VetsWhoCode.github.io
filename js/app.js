@@ -1,9 +1,7 @@
 //dark / light mode toggle
-let checkbox = document.getElementById("checkbox");
+const checkbox = document.getElementById("checkbox");
+const ball = document.getElementById("ball");
 
-// Ternary Operator - condition ? true : false
-
-//function for is localStorage is true
 
 function darkMode() {
   if (localStorage.getItem("dark") === "true") {
@@ -14,37 +12,32 @@ function darkMode() {
 }
 function lightMode() {
   if (localStorage.getItem("dark") === "false") {
-    document.body.removeAttribute("data-theme");
+    document.body.setAttribute("data-theme", "light");
     // localStorage.setItem("dark", "false");
     console.log("back to light mode");
   }
 }
-//function for is localStorage is false
+
 checkbox.addEventListener("change", function (event) {
   localStorage.setItem("dark", this.checked);
-
+// Ternary Operator - condition ? true : false
   event.target.checked ? darkMode() : lightMode();
 });
 
-// function themeChecker(){
-//   if(localStorage.getItem(('dark')==="false")){
-//     document.body.setAttribute('data-theme', 'dark')
-//   }
-//   else{
-//     localStorage.getItem(('dark')==="true");
-//     document.body.removeAttribute('data-theme');
-//   }
-// }
-
-// checkbox.addEventListener('change', themeChecker());
-
-const ball = document.getElementById("ball");
 window.addEventListener("load", (event) => {
   if (localStorage.getItem("dark") === "true") {
     document.body.setAttribute("data-theme", "dark");
-    // document.getElementById('chk').checked = true;
+    
+
+  } else {
+    document.body.setAttribute("data-theme", "light");
+    ball.checked = true;
   }
 });
+
+
+
+
 
 // toggle for mobile menu
 

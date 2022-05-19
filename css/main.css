@@ -10,6 +10,15 @@
   --fw-b: 700;
 
   /* light mode - background gradients */
+ 
+}
+
+/* Dark Mode Theme */
+/* * {
+  transition: 200ms ease;
+} */
+
+[data-theme="light"]{
   --color1: #f2ccba;
   --color2: #fdf3c6;
   --color3: #96c1d6;
@@ -18,11 +27,6 @@
   /* Light Mode */
   --body-text: #1e1e1e;
   --body-bkg: #ffffff;
-}
-
-/* Dark Mode Theme */
-* {
-  transition: 200ms ease;
 }
 
 [data-theme="dark"] {
