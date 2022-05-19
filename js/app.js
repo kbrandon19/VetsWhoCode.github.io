@@ -2,42 +2,38 @@
 const checkbox = document.getElementById("checkbox");
 const ball = document.getElementById("ball");
 
-
 function darkMode() {
   if (localStorage.getItem("dark") === "true") {
     document.body.setAttribute("data-theme", "dark");
-    // localStorage.setItem("dark", "true");
-    console.log("it should be dark mode");
+    localStorage.setItem("dark");
+
+    // console.log("it should be dark mode");
   }
 }
 function lightMode() {
   if (localStorage.getItem("dark") === "false") {
     document.body.setAttribute("data-theme", "light");
-    // localStorage.setItem("dark", "false");
-    console.log("back to light mode");
+    localStorage.setItem("light");
+    // console.log("back to light mode");
   }
 }
 
 checkbox.addEventListener("change", function (event) {
   localStorage.setItem("dark", this.checked);
-// Ternary Operator - condition ? true : false
+  // Ternary Operator - condition ? true : false
   event.target.checked ? darkMode() : lightMode();
 });
 
 window.addEventListener("load", (event) => {
   if (localStorage.getItem("dark") === "true") {
     document.body.setAttribute("data-theme", "dark");
-    
-
+    localStorage.setItem("dark");
   } else {
     document.body.setAttribute("data-theme", "light");
-    ball.checked = true;
+    localStorage.setItem("light");
+    check.checked = true;
   }
 });
-
-
-
-
 
 // toggle for mobile menu
 

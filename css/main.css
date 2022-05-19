@@ -9,14 +9,12 @@
   --fw-sb: 600;
   --fw-b: 700;
 
-  /* light mode - background gradients */
- 
 }
 
 /* Dark Mode Theme */
-/* * {
-  transition: 200ms ease;
-} */
+* {
+  transition: 100ms ease;
+}
 
 [data-theme="light"]{
   --color1: #f2ccba;
@@ -36,12 +34,6 @@
   --color3: #75230e;
   --contact-btn: #754f80;
 
-  --bg-gradient: linear-gradient(
-    265deg,
-    var(--color1),
-    var(--color2),
-    var(--color3)
-  );
   --body-text: #ffffff;
   --body-bkg: #1e1e1e;
 }
@@ -279,6 +271,7 @@ p {
   transform: translateX(24px);
   background-color: #2f5073;
 }
+
 
 .toggle .checkbox:checked + .label {
   background-color: #badcff;
