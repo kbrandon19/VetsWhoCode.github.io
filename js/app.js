@@ -41,6 +41,8 @@ const ham = document.getElementById("ham");
 const mobileNav = document.getElementById("mobile-nav");
 const overlayEffect = document.getElementById("overlay");
 const main = document.querySelector("main");
+const openMenu = document.getElementById('open-menu');
+const closeMenu = document.getElementById('close-menu');
 
 ham.addEventListener("click", () => {
   mobileNav.classList.toggle("show-nav");
