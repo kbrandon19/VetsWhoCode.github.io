@@ -67,7 +67,7 @@ body {
   background-color: var(--body-bkg);
   font-family: "Poppins", Helvetica, sans-serif;
   margin: 0;
-  width: 100%;
+ 
 }
 
 /* removes the scrollbar */
@@ -115,7 +115,7 @@ p {
 /*  Navigation */
 
 .nav {
-  width: 100%;
+  width: 100vw;
   height: 90px;
   display: flex;
   position: fixed;
@@ -137,7 +137,7 @@ p {
 .logo {
   width: auto;
   height: auto;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .logo p {
@@ -149,12 +149,42 @@ p {
   line-height: 1;
   transition: color 300ms ease;
 }
-
+/* 
 .ham {
   width: auto;
   height: auto;
   margin-right: 2rem;
   cursor: pointer;
+} */
+
+.ham {
+  cursor: pointer;
+  margin-right:2rem;
+}
+
+.ham span {
+  width: 32px;
+  height: 3px;
+  display: block;
+  margin: 6px auto;
+  background: var(--body-text);
+  transition: all 0.2s ease-in-out;
+}
+
+.ham.active span:first-of-type {
+  width: 27px;
+  background: var(--body-text);
+  transform: rotate(45deg) translate(2px, 12px);
+  margin-left: 2px;
+}
+.ham.active span:nth-last-of-type(2) {
+  opacity: 0;
+}
+.ham.active span:last-of-type {
+  width: 27px;
+  background: var(--body-text);
+  transform: rotate(-45deg) translate(1px, -10px);
+  margin-left: 2px;
 }
 
 .main-overlay {
@@ -162,8 +192,9 @@ p {
   backdrop-filter: blur(4px);
 }
 .mobile-nav {
-  width: 100%;
-  height: 400px;
+  width: 100vw;
+  height: auto;
+  padding:1rem 0;
   /* border-radius:22% 78% 26% 74% / 68% 34% 66% 32% ; */
   display: none;
   position: fixed;
@@ -171,7 +202,7 @@ p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  bottom: -10px;
+  top: 200px;
   z-index: 10;
   opacity: 0;
   transition: opacity 300ms ease;
@@ -186,7 +217,7 @@ p {
 
 .mobile-nav ul {
   text-align: center;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 .mobile-nav ul li {
   margin: 15px 0;
@@ -401,7 +432,7 @@ p {
   width: 400px;
   font-size: 4.5rem;
   position: absolute;
-  top: 15rem;
+  top: 13rem;
   font-weight: var(--fw-b);
   line-height: 1;
   color: white;
@@ -422,7 +453,7 @@ p {
 .bio__image {
   width: 100%;
   max-width: 600px;
-  height: 400px;
+  height: 500px;
   background-image: url("/assets/IMG_3498-Edit.png");
   background-position: top;
   background-repeat: no-repeat;
@@ -714,6 +745,11 @@ p {
 @media screen and (min-width: 1280px) {
   .bio p#greeting {
     left: 6rem;
+    top:30rem;
+  }
+
+  .bio__image{
+    height: 720px;
   }
 }
 
@@ -747,7 +783,9 @@ p {
   }
 
   .bio p#greeting {
-    left: 10rem;
+    left: 12rem;
+ 
+    font-size: 6.9rem;
   }
   .photo-sec__headline,
   .web-sec__headline {
