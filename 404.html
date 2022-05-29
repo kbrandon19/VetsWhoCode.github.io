@@ -5,16 +5,22 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light">
 
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/fdaa837f4d.js" crossorigin="anonymous"></script>
 
   <!-- Style Sheet-->
   <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/photography.css" />
+  <!-- Swiperjs-->
+  <link rel="stylesheet" href="./css/swiper-bundle.css" />
   <!-- favicon -->
   <link rel="shortcut icon" href="./assets/logo_fox.png" type="image/png" />
-  <title>Photography</title>
+
+  <!-- Animate Style-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <title>Kenneth Brandon</title>
 </head>
 
 <body>
@@ -25,6 +31,7 @@
           <p>Kenneth <br> Brandon</p>
         </a>
         <!-- <img src="./assets/logo_name.svg" alt="Website logo" /> -->
+
       </div>
       <div class="ham" id="ham">
         <!-- <img id="open-menu"src="./assets/ham.svg" alt="Mobile menu icon" /> -->
@@ -45,12 +52,13 @@
         <div class="toggle">
           <input type="checkbox" name="" class="checkbox" id="checkbox">
           <label for="checkbox" class="label">
-            <div class="ball"></div>
+            <div class="ball" id="ball"></div>
           </label>
         </div>
       </div>
     </nav>
-    <div class="mobile-nav " id="mobile-nav">
+    <div class="mobile-nav" id="mobile-nav">
+
       <ul id="mobile-nav__links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -59,81 +67,34 @@
         <li><a href="photography.html">Photography</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <!-- <div class="toggle">
+
+      <div class="toggle">
         <input type="checkbox" name="" class="checkbox" id="checkbox">
         <label for="checkbox" class="label">
-          <div class="ball"></div>
+          <div class="ball">
+          </div>
         </label>
-      </div> -->
+      </div>
     </div>
   </header>
 
   <main>
-    <div class="overlay" id="overlay"></div>
-    <div class="spacer-sm"></div>
-
-    <div class="portfolio" id="portfolio">
-      <!-- <div class="portfolio__title">
-            <div class="hori-rule"></div>
-            <h1>Portraiture</h1>
-          </div> -->
-      <!-- <div class="portfolio__genre">
-          <div class="portfolio__genre-type" id="portrait">
-            <p>Portrait</p>
-          </div>
-          <div class="portfolio__genre-type" id="automotive">
-            <p>Automotive</p>
-          </div>
-          <div class="portfolio__genre-type" id="product">
-            <p>Product</p>
-          </div>
-          <div class="portfolio__genre-type" id="fashion">
-            <p>Fashion</p>
-          </div>
-          <div class="portfolio__genre-type" id="interior">
-            <p>Interior</p>
-          </div>
-        </div> -->
-
-      <div class="portfolio__grid">
-        <div class="portrait">
-          <div class="portrait-text hide" id="portrait-text">
-            <p><a href="#">Portrait</a></p>
-          </div>
-        </div>
-        <div class="automotive">
-          <div class="auto-text hide" id="auto-text">
-            <p><a href="#">Automotive</a></p>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-text hide" id="product-text">
-            <p><a href="#">Product</a></p>
-          </div>
-        </div>
-        <div class="fashion">
-          <div class="fashion-text hide" id="fashion-text">
-            <p><a href="#">Fashion</a></p>
-          </div>
-        </div>
-        <div class="interior">
-          <div class="interior-text hide" id="interior-text">
-            <p><a href="#">Interior</a></p>
-          </div>
-        </div>
+      <div class="container">
+          <h1>Don't worry, youre in the right place.</h1>
+          <p>Some wrinkles are being smoothed out. Until thing be sure to check out my <a href="https://www.github.com/kbrandon19">GitHub</a></p>
       </div>
-    </div>
   </main>
+  <div class="spacer-md"></div>
   <footer class="footer">
     <!-- <div class="footer__logo">
-        <img src="./assets/logo_fox.png" alt="fox logo">
-      </div> -->
+      <img src="./assets/logo_fox.png" alt="fox logo">
+    </div> -->
     <div class="footer__site-map">
       <div class="footer__site-map--link">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="services.html">Services</a>
+        <a href="services">Services</a>
         <a href="web-project.html">Web Design</a>
         <a href="photography.html">Photogaphy</a>
       </div>
@@ -155,8 +116,44 @@
   </footer>
 
   <script src="./js/app.js"></script>
-  <script src="./js/silly-element.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript">
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: false,
 
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      scrollbar: {
+        draggable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        // when window width is >= 768px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1440: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
 </body>
 
 </html>
