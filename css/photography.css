@@ -112,8 +112,8 @@
 
 
 .portfolio__grid .portrait {
-  background-image: url("/assets/photog-1.png");
-  background-position: center;
+  background-image: url("https://res.cloudinary.com/dujkjy2e2/image/upload/v1653841893/Portraiture/IMG_5600_quwh3i.jpg");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   grid-area: portait;

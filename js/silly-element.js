@@ -2,7 +2,7 @@
 
 // various background colors
 let defaultColor = document.querySelector(body.backgroundColor);
-let portraitColor = "#E8CDDA";
+let portraitColor = "rgb(166,203,226)";
 let autoColor = "#AF4546";
 let productColor = "#B1AFAA";
 let fashionColor = "#D2A97C";
