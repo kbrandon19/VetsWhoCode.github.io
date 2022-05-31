@@ -119,28 +119,28 @@
   grid-area: portait;
 }
 .portfolio__grid .automotive {
-  background-image: url("/assets/photog-2.png");
+  background-image: url("https://res.cloudinary.com/dujkjy2e2/image/upload/v1654006177/Automotive/IMG_5825_cmycic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   grid-area: automotive;
 }
 .portfolio__grid .product {
-  background-image: url("/assets/photog-3.png");
+  background-image: url("https://res.cloudinary.com/dujkjy2e2/image/upload/v1654008427/Product/IMG_0056_krpoi4.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   grid-area: product;
 }
 .portfolio__grid .fashion {
-  background-image: url("/assets/photog-4.png");
+  background-image: url("https://res.cloudinary.com/dujkjy2e2/image/upload/v1654008097/Fashion/IMG_2840-Edit_x6ceiy.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   grid-area: fashion;
 }
 .portfolio__grid .interior {
-  background-image: url("/assets/photog-5.png");
+  background-image: url("https://res.cloudinary.com/dujkjy2e2/image/upload/v1654007185/Interior/IMG_6625_feyrtg.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;

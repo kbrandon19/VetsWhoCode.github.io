@@ -3,10 +3,10 @@
 // various background colors
 let defaultColor = document.querySelector(body.backgroundColor);
 let portraitColor = "rgb(166,203,226)";
-let autoColor = "#AF4546";
-let productColor = "#B1AFAA";
-let fashionColor = "#D2A97C";
-let interiorColor = "#9F8E74";
+let autoColor = "rgb(76,0,13)";
+let productColor = "rgb(119,56,24)";
+let fashionColor = "rgb(69,64,67)";
+let interiorColor = "rgb(88,94,61)";
 
 //grid items
 const portraitGrid = document.getElementsByClassName("portrait");
