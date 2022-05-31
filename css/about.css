@@ -49,8 +49,8 @@
 .about__fill-image {
   width: 100%;
   height: 200px;
-  background-image: url("https://source.unsplash.com/random/?photography,travel");
-  background-position: center;
+  background-image: url("https://res.cloudinary.com/dujkjy2e2/image/upload/v1654009041/IMG_9367_afkaqt.jpg");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
