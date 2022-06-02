@@ -636,7 +636,7 @@ p {
 
 @media screen and (min-width: 1280px) {
   .bio p#greeting {
-    left: 6rem;
+    left: 8rem;
     top: 30rem;
   }
 
