@@ -29,7 +29,32 @@
     .hero__content{
       z-index: 1;
     }.hero__content h1{text-shadow: 10px 1px 11px rgba(0,0,0,0.19);}
+    .social-icons{
+      margin-top:1rem;
+      cursor: pointer;
+      transition:background-color 500ms ease;
+    }
+    .social-icons a{
+      padding:12px 2.5rem;
+      border-radius: 12px;;
+      transition:background-color 500ms ease;
+    }
 
+    .social-icons a#tw:hover{
+      background-color: #55acee5e;
+    }
+    .social-icons a#gt:hover{
+      background-color: #6e54945e;
+    }
+    .social-icons a#ig:hover{
+      background-color: rgba(190, 73, 27, 0.353); 
+    }
+    .social-icons a#gm:hover{
+      background-color: #c716105e;
+    }
+    .social-icons a#ln:hover{
+      background-color: #007bb55e;
+    }
     @media screen and (min-width:1280px){
       .hero__content {
         margin-left:9rem
@@ -56,11 +81,8 @@
 
       <div class="desktop-nav" id="desktop-nav">
         <ul id="desktop-nav__links">
-          <li><a href="index.html">Home</a></li>
+
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="web-project.html">Web Development</a></li>
-          <li><a href="photography.html">Photography</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="toggle">
@@ -74,11 +96,8 @@
     <div class="mobile-nav" id="mobile-nav">
 
       <ul id="mobile-nav__links">
-        <li><a href="index.html">Home</a></li>
+    
         <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="web-project.html">Web Development</a></li>
-        <li><a href="photography.html">Photography</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -95,8 +114,15 @@
   
         <h1>Don't worry, you're in the right place.</h1>
         <p>
-        Some things are being finished up. Be sure to check back soon, but until then, follow me and stay connected!
+        Some things are being finished up. Be sure to check back soon. Until then, follow me and stay connected!
         </p>
+        <div class="social-icons">
+          <a href="https://www.twitter.com/mrdebonairfox" id="tw"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.github.com/kbrandon19" id="gt"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/mrdebonairfox" id="ig"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:kbrandon319@gmail.com" id="gm"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/kdbrand" id="ln"><i class="fa solid fa-linkedin"></i></a>
+        </div>
  
       </div>
       <div class="hero__side-image">
