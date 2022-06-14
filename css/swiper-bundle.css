@@ -92,6 +92,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.swiper-slide-thumbnail#s4{
+  background-image: url('/assets/jdaniel.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .swiper-slide-invisible-blank {
   visibility: hidden;
 }
